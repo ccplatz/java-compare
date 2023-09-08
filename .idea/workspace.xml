@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f48472d3-12ac-4fb9-ace8-92385b3ff8cf" name="Changes" comment="setup person class">
+    <list default="true" id="f48472d3-12ac-4fb9-ace8-92385b3ff8cf" name="Changes" comment="implement person class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
     </list>
@@ -56,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694155650295</updated>
-      <workItem from="1694155652744" duration="4161000" />
+      <workItem from="1694155652744" duration="4239000" />
     </task>
     <task id="LOCAL-00001" summary="rebuild project">
       <option name="closed" value="true" />
@@ -74,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694155845446</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implement person class">
+      <option name="closed" value="true" />
+      <created>1694159841770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694159841770</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +92,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rebuild project" />
     <MESSAGE value="setup person class" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup person class" />
+    <MESSAGE value="implement person class" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement person class" />
   </component>
 </project>

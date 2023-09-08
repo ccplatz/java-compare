@@ -1,4 +1,3 @@
-import java.text.DecimalFormat;
 import java.util.*;
 
 public class Person {
@@ -71,7 +70,7 @@ public class Person {
     }
 
     public double getBmi() {
-        return round(weight / Math.pow((double) height, 2));
+        return round(weight / Math.pow(height, 2));
     }
 
     @Override
