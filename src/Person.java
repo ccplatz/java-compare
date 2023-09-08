@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Person {
+public class Person implements Comparable<Person> {
     String name, firstName;
     double height, weight;
 
@@ -82,5 +82,10 @@ public class Person {
                 ", Gewicht: " + getWeight() + " kg" +
                 ", BMI: " + getBmi() +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return Double.compare(this.getHeight(), o.getHeight());
     }
 }
