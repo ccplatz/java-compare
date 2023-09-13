@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,6 +8,10 @@ public class Main {
             persons.add(new Person());
         }
 
+        System.out.println("----------- Unsorted -----------");
+        persons.forEach(System.out::println);
+        System.out.println("----------- Sorted -----------");
+        Collections.sort(persons);
         persons.forEach(System.out::println);
     }
 }
