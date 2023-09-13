@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class Person implements Comparable<Person> {
-    String name, firstName;
-    double height, weight;
+    private String name, firstName;
+    private double height, weight;
 
     ArrayList<String> firstNames = new ArrayList<>(Arrays.asList("Abraham", "Berta", "Carsten", "Detlef", "Edeltraud", "Ferdinand"));
     ArrayList<String> names = new ArrayList<>(Arrays.asList("Asbach", "Braun", "Conrad", "Dreher", "Engel", "Fischer"));

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f48472d3-12ac-4fb9-ace8-92385b3ff8cf" name="Changes" comment="add readme">
+    <list default="true" id="f48472d3-12ac-4fb9-ace8-92385b3ff8cf" name="Changes" comment="sort persons">
+      <change afterPath="$PROJECT_DIR$/src/PersonBmiComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PersonHeightComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PersonNameComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PersonWeightComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +57,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694155650295</updated>
       <workItem from="1694155652744" duration="6228000" />
-      <workItem from="1694584557071" duration="470000" />
+      <workItem from="1694584557071" duration="6421000" />
     </task>
     <task id="LOCAL-00001" summary="rebuild project">
       <option name="closed" value="true" />
@@ -103,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694160101430</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sort persons">
+      <created>1694585145013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694585145013</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +131,7 @@
     <MESSAGE value="setup person class" />
     <MESSAGE value="implement person class" />
     <MESSAGE value="add readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="add readme" />
+    <MESSAGE value="sort persons" />
+    <option name="LAST_COMMIT_MESSAGE" value="sort persons" />
   </component>
 </project>
