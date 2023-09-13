@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f48472d3-12ac-4fb9-ace8-92385b3ff8cf" name="Changes" comment="sort persons">
-      <change afterPath="$PROJECT_DIR$/src/PersonBmiComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PersonHeightComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PersonNameComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PersonWeightComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f48472d3-12ac-4fb9-ace8-92385b3ff8cf" name="Changes" comment="sort persons by user input with comparator">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694155650295</updated>
       <workItem from="1694155652744" duration="6228000" />
-      <workItem from="1694584557071" duration="6421000" />
+      <workItem from="1694584557071" duration="6592000" />
     </task>
     <task id="LOCAL-00001" summary="rebuild project">
       <option name="closed" value="true" />
@@ -120,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694585145013</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="sort persons by user input with comparator">
+      <created>1694593036046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694593036046</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +133,7 @@
     <MESSAGE value="implement person class" />
     <MESSAGE value="add readme" />
     <MESSAGE value="sort persons" />
-    <option name="LAST_COMMIT_MESSAGE" value="sort persons" />
+    <MESSAGE value="sort persons by user input with comparator" />
+    <option name="LAST_COMMIT_MESSAGE" value="sort persons by user input with comparator" />
   </component>
 </project>

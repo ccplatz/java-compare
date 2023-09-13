@@ -7,7 +7,8 @@ public class Main {
             persons.add(new Person());
         }
 
-        /*System.out.println("----------- Unsorted -----------");
+        /* Sorting by comparable
+        System.out.println("----------- Unsorted -----------");
         persons.forEach(System.out::println);
         System.out.println("----------- Sorted by height -----------");
         Collections.sort(persons);
@@ -15,7 +16,8 @@ public class Main {
         System.out.println("----------- Sorted by weight -----------");
         Comparator<Person> personWeightComparator = new PersonWeightComparator();
         persons.sort(personWeightComparator);
-        persons.forEach(System.out::println);*/
+        persons.forEach(System.out::println);
+        */
 
         System.out.println("----------- Unsorted -----------");
 
