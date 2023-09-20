@@ -38,14 +38,6 @@ public class Person implements Comparable<Person> {
         }
     };
 
-    public static HashMap<Integer, Comparator<Person>> comparatorsToSortBy = new HashMap<>();
-    static {
-        comparatorsToSortBy.put(1, Person.heightComparator);
-        comparatorsToSortBy.put(2, Person.weightComparator);
-        comparatorsToSortBy.put(3, Person.bmiComparator);
-        comparatorsToSortBy.put(4, Person.nameComparator);
-    }
-
     public Person() {
         Collections.shuffle(names);
         this.name = names.get(0);
@@ -56,6 +48,16 @@ public class Person implements Comparable<Person> {
         HashMap<String, Double> weightAndHeight = getHeightAndWeight();
         this.height = weightAndHeight.get("height");
         this.weight = weightAndHeight.get("weight");
+    }
+
+    public static Comparator<Person> getComparatorByType(String compare) {
+        HashMap<String, Comparator<Person>> comparatorsToSortBy = new HashMap<>();
+            comparatorsToSortBy.put("height", Person.heightComparator);
+            comparatorsToSortBy.put("weight", Person.weightComparator);
+            comparatorsToSortBy.put("bmi", Person.bmiComparator);
+            comparatorsToSortBy.put("name", Person.nameComparator);
+
+            return comparatorsToSortBy.get(compare);
     }
 
     private static HashMap<String, Double> getHeightAndWeight() {

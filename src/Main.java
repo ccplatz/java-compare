@@ -40,6 +40,7 @@ public class Main {
         System.out.print("1 height \n2 weight \n3 BMI \n4 name (Lastname, firstname)");
         System.out.println();
         int keyOfAttributeToSortBy = Integer.parseInt(scanner.nextLine());
+        String typeToCompareBy = attributesToSortBy.get(keyOfAttributeToSortBy);
 
         String howToSort = "How do you want to sort the Persons by " + attributesToSortBy.get(keyOfAttributeToSortBy);
         System.out.println(howToSort);
@@ -55,8 +56,8 @@ public class Main {
 
         persons.sort(
                 keyOfDirectionToSortBy == 2 ?
-                        Person.comparatorsToSortBy.get(keyOfAttributeToSortBy).reversed() :
-                        Person.comparatorsToSortBy.get(keyOfAttributeToSortBy)
+                        Person.getComparatorByType(typeToCompareBy).reversed() :
+                        Person.getComparatorByType(typeToCompareBy)
         );
         persons.forEach(System.out::println);
     }
