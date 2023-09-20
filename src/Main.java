@@ -27,12 +27,6 @@ public class Main {
         attributesToSortBy.put(3, "BMI");
         attributesToSortBy.put(4, "name");
 
-        HashMap<Integer, Comparator<Person>> comparatorsToSortBy = new HashMap<>();
-        comparatorsToSortBy.put(1, new PersonHeightComparator());
-        comparatorsToSortBy.put(2, new PersonWeightComparator());
-        comparatorsToSortBy.put(3, new PersonBmiComparator());
-        comparatorsToSortBy.put(4, new PersonNameComparator());
-
         HashMap<Integer, String> directionsToSortBy = new HashMap<>();
         directionsToSortBy.put(1, "ascending");
         directionsToSortBy.put(2, "descending");
@@ -61,8 +55,8 @@ public class Main {
 
         persons.sort(
                 keyOfDirectionToSortBy == 2 ?
-                        comparatorsToSortBy.get(keyOfAttributeToSortBy).reversed() :
-                        comparatorsToSortBy.get(keyOfAttributeToSortBy)
+                        Person.comparatorsToSortBy.get(keyOfAttributeToSortBy).reversed() :
+                        Person.comparatorsToSortBy.get(keyOfAttributeToSortBy)
         );
         persons.forEach(System.out::println);
     }

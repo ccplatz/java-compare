@@ -7,6 +7,45 @@ public class Person implements Comparable<Person> {
     ArrayList<String> firstNames = new ArrayList<>(Arrays.asList("Abraham", "Berta", "Carsten", "Detlef", "Edeltraud", "Ferdinand"));
     ArrayList<String> names = new ArrayList<>(Arrays.asList("Asbach", "Braun", "Conrad", "Dreher", "Engel", "Fischer"));
 
+    static Comparator<Person> heightComparator = new Comparator<Person>() {
+        @Override
+        public int compare(Person firstPerson, Person secondPerson) {
+            return Double.compare(firstPerson.getHeight(), secondPerson.getHeight());
+        }
+    };
+
+    static Comparator<Person> weightComparator = new Comparator<Person>() {
+        @Override
+        public int compare(Person firstPerson, Person secondPerson) {
+            return Double.compare(firstPerson.getWeight(), secondPerson.getWeight());
+        }
+    };
+
+    static Comparator<Person> bmiComparator = new Comparator<Person>() {
+        @Override
+        public int compare(Person firstPerson, Person secondPerson) {
+            return Double.compare(firstPerson.getBmi(), secondPerson.getBmi());
+        }
+    };
+
+    static Comparator<Person> nameComparator = new Comparator<Person>() {
+        @Override
+        public int compare(Person firstPerson, Person secondPerson) {
+            if (firstPerson.getName().compareTo(secondPerson.getName()) == 0) {
+                return firstPerson.getFirstName().compareTo(secondPerson.getFirstName());
+            }
+            return firstPerson.getName().compareTo(secondPerson.getName());
+        }
+    };
+
+    public static HashMap<Integer, Comparator<Person>> comparatorsToSortBy = new HashMap<>();
+    static {
+        comparatorsToSortBy.put(1, Person.heightComparator);
+        comparatorsToSortBy.put(2, Person.weightComparator);
+        comparatorsToSortBy.put(3, Person.bmiComparator);
+        comparatorsToSortBy.put(4, Person.nameComparator);
+    }
+
     public Person() {
         Collections.shuffle(names);
         this.name = names.get(0);
