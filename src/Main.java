@@ -15,7 +15,7 @@ public class Main {
         persons.forEach(System.out::println);
         System.out.println("----------- Sorted by weight -----------");
         Comparator<Person> personWeightComparator = new PersonWeightComparator();
-        persons.sort(personWeightComparator);
+        persons.sort(Person.weightComparator);
         persons.forEach(System.out::println);
         */
 
