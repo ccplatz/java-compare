@@ -23,15 +23,7 @@ public class Person implements Comparable<Person> {
         }
     };
 
-    static Comparator<Person> nameComparator = new Comparator<Person>() {
-        @Override
-        public int compare(Person firstPerson, Person secondPerson) {
-            if (firstPerson.getName().compareTo(secondPerson.getName()) == 0) {
-                return firstPerson.getFirstName().compareTo(secondPerson.getFirstName());
-            }
-            return firstPerson.getName().compareTo(secondPerson.getName());
-        }
-    };
+    static Comparator<Person> nameComparator = Comparator.comparing(Person::getName).thenComparing(Person::getFirstName);
 
     public Person() {
         Collections.shuffle(names);
