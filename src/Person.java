@@ -1,26 +1,21 @@
 import java.util.*;
 
 public class Person implements Comparable<Person> {
-    private String name, firstName;
-    private double height, weight;
+    private final String name;
+    private final String firstName;
+    private final double height;
+    private final double weight;
 
     private static final ArrayList<String> firstNames = new ArrayList<>(Arrays.asList("Abraham", "Berta", "Carsten", "Detlef", "Edeltraud", "Ferdinand"));
     private static final ArrayList<String> names = new ArrayList<>(Arrays.asList("Asbach", "Braun", "Conrad", "Dreher", "Engel", "Fischer"));
 
-    static Comparator<Person> heightComparator = new Comparator<Person>() {
-        @Override
-        public int compare(Person firstPerson, Person secondPerson) {
-            return Double.compare(firstPerson.getHeight(), secondPerson.getHeight());
-        }
-    };
+    // use lambda expression
+    static Comparator<Person> heightComparator = (firstPerson, secondPerson) -> Double.compare(firstPerson.getHeight(), secondPerson.getHeight());
 
-    static Comparator<Person> weightComparator = new Comparator<Person>() {
-        @Override
-        public int compare(Person firstPerson, Person secondPerson) {
-            return Double.compare(firstPerson.getWeight(), secondPerson.getWeight());
-        }
-    };
+    // use comparing method
+    static Comparator<Person> weightComparator = Comparator.comparingDouble(Person::getWeight);
 
+    // use anonymous class
     static Comparator<Person> bmiComparator = new Comparator<Person>() {
         @Override
         public int compare(Person firstPerson, Person secondPerson) {
@@ -82,32 +77,16 @@ public class Person implements Comparable<Person> {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getFirstName() {
         return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
     }
 
     public double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
-
     public double getWeight() {
         return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
     }
 
     public double getBmi() {
