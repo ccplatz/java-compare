@@ -38,13 +38,20 @@ public class Person implements Comparable<Person> {
     }
 
     public static Comparator<Person> getComparatorByType(String compare) {
-        HashMap<String, Comparator<Person>> comparatorsToSortBy = new HashMap<>();
-            comparatorsToSortBy.put("height", Person.heightComparator);
-            comparatorsToSortBy.put("weight", Person.weightComparator);
-            comparatorsToSortBy.put("bmi", Person.bmiComparator);
-            comparatorsToSortBy.put("name", Person.nameComparator);
-
-            return comparatorsToSortBy.get(compare);
+        switch (compare) {
+            case "weight" -> {
+                return Person.weightComparator;
+            }
+            case "bmi" -> {
+                return Person.bmiComparator;
+            }
+            case "name" -> {
+                return Person.nameComparator;
+            }
+            default -> {
+                return Person.heightComparator;
+            }
+        }
     }
 
     private static HashMap<String, Double> getHeightAndWeight() {
